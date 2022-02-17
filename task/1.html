@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<script src="1.js"></script>
+<meta charset="utf-8">
+<title>Registration form</title>
+</head>
+<body>
+  <label>Username</label>
+<input type="Username" name="Username" value="">
+<br>
+<label>Password</label>
+<input type="password" id="password" value=""/>
+<button onclick="if (password.type == 'text') password.type = 'password';
+  else password.type = 'text';">show</button>
+  <br>
+  <label>Confirm Password</label>
+  <input type="Password" id="Password" value=""/>
+  <form method="post">
+ <div>
+ <label for="terms_and_conditions">I согласен :</label>
+ <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" />
+ </div>
+ <div>
+ <button type="submit" id="submit_button" disabled>Sign up</button>
+ </div>
+ <label>Maximum 15 characters</label>
+<textarea id="textarea" maxlength="15"></textarea>
+</form>
+<br>
+<br>
+<br>
+<br>
+
+
+<a href="#" id="UP">Up</a>
+</body>
+</html>
